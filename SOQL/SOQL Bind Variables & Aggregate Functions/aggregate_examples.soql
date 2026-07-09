@@ -1,0 +1,8 @@
+// Scenario 1: Count total rows associated with a field
+SELECT COUNT(City__c) FROM Property__c
+
+// Scenario 2: Count unique/distinct values (ignores duplicates)
+SELECT COUNT_DISTINCT(City__c) FROM Property__c
+
+// Scenario 3: Find the minimum (earliest) date listed
+SELECT MIN(Date_Listed__c) FROM Property__c
