@@ -1,0 +1,8 @@
+// Scenario 1: Sorting in Ascending order (Default behavior)
+SELECT Name, Email FROM Contact ORDER BY Name ASC LIMIT 5
+
+// Scenario 2: Using DESC for Descending order
+SELECT Name, Email FROM Contact ORDER BY Email DESC LIMIT 5
+
+// Scenario 3: Explicit handling of empty/missing values
+SELECT Name, Email FROM Contact ORDER BY Email NULLS LAST
