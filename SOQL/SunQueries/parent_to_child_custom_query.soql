@@ -1,0 +1,1 @@
+SELECT Name, (SELECT Address__c, Price__c FROM Properties__r) FROM Broker__c
