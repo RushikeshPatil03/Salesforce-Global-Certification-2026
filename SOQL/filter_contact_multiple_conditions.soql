@@ -1,0 +1,8 @@
+// Scenario 1: Using AND to return records meeting both conditions
+SELECT Name, Email FROM Contact WHERE FirstName = 'Stella' AND LastName = 'Pavlova'
+
+// Scenario 2: Using OR to return records meeting either condition
+SELECT Name, Email FROM Contact WHERE LastName = 'James' OR LastName = 'Barr'
+
+// Scenario 3: Using IN to match against a list of multiple specific values
+SELECT Name, Email FROM Contact WHERE LastName IN ('James', 'Barr', 'Nedaerk', 'Forbes')
