@@ -1,0 +1,10 @@
+// Step 1: Group the maximum status value by individual Broker name
+SELECT MAX(Status__c), Broker__r.Name
+FROM Property__c
+GROUP BY Broker__r.Name
+
+// Step 2: Use HAVING to filter groups down to only 'Closed' statuses
+SELECT MAX(Status__c), Broker__r.Name
+FROM Property__c
+GROUP BY Broker__r.Name
+HAVING MAX(Status__c) = 'Closed'
